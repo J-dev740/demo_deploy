@@ -13,7 +13,7 @@ const feedback = document.getElementById('feedback');
 const roomMessage = document.querySelector('.room-message');
 const users = document.querySelector('.users');
 //Socket server url
-const socket=io.connect('http://localhost:3000');
+const socket=io.connect('https://ch-a-t.herokuapp.com/');
 
 //Fetch URL Params from URL
 const queryString=window.location.search;
