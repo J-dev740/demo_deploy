@@ -2,7 +2,7 @@ const express = require('express');
 const app=express();
 const bodyParser = require('body-parser');
 const socket = require('socket.io');
-
+var port= process.env.PORT ||3000;
 
 app.use(bodyParser.urlencoded({extended:false}));// to parse the url req  body
 
@@ -29,7 +29,7 @@ app.get('/room',(req,res)=>{
 });
 
 //Start Server
-const server = app.listen(3000, () => {
+const server = app.listen({port}, () => {
     console.log(`Server Running on 3000`);
 });
 
