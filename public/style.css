@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     margin-top: 15px;
     border-style: dotted;
+    border-radius: 20px;
     border-width: medium;
     background-color: #b5af96;
 }
@@ -30,12 +31,15 @@ h1 {
   width: 25%;
   border-style: double;
   border-width: thick;
+  border-radius: 55px;
   overflow: auto;
 }
 
     .window {
   width: 75%;
   border-width: 37px;
+  border-radius: 67px;
+    border-color: #d3c6d0;
   /* border-top: #513623; */
   border-style: groove;
 }
@@ -66,8 +70,12 @@ input[type="text"] {
     width: 69%;
     padding: 5px;
     margin: 5px;
+    border-radius: 30px;
     position: inherit;
     height: 37px;
+}
+button#send {
+    border-radius: 6px;
 }
 /* button {
     width: 100%;
@@ -136,7 +144,9 @@ input[type="text"] {
     background-color: rgb(110, 103, 103);
     color: white;
 }
-
+p.users-online {
+    text-align: center;
+}
 /* -------------- index.ejs -------------- */
 
 .content {
